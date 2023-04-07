@@ -1,0 +1,16 @@
+{
+  "name": "saral-banking-sewa-by-aman-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass scss/style.scss css/style.css --w  --source-map false --output-style compressed",
+    "loan": "node-sass scss/loan.scss css/loan.css --w  --source-map false --output-style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

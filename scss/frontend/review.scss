@@ -1,0 +1,118 @@
+.review_top_flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.review_infos{
+  padding-left: 1rem;
+  p{
+    margin-bottom: 0;
+    line-height: 1;
+    font-size: 1.9rem;
+  }
+  span{
+    color: $theme_color;
+    
+  }
+}
+.rating_review{
+  margin: .6rem 0;
+  display: flex;
+  i{
+    color: $rating;
+  }
+}
+.rating_details{
+  p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+}
+.review_user{
+  span{
+    height: 4.5rem;
+    width: 4.5rem;
+    background: $theme_color;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 4.5rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+}
+.client_review{
+  margin-top: 5rem;
+}
+.review-swiper .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, 
+.review-swiper .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  left: initial;
+  transform: translateX(0);
+  right: 0;
+  bottom: .2rem;
+}
+.review_bg{
+  background: #f4f8ff;
+  box-shadow: 0 0 25px rgba(0,0,0,.1);
+  padding: 1.5rem;
+  box-sizing: border-box;
+  border: 1px solid #f4f4f4;
+  border-radius: .3rem;
+}
+.client_review{
+  .title_head{
+    margin-bottom: 3rem;
+  }
+}
+
+.rating { 
+  border: none;
+}
+
+
+.rating > [id^="star"] { display: none; } 
+.rating > label:before { 
+margin: 5px;
+font-size: 1.8rem;
+font-family: bootstrap-icons;
+display: inline-block;
+content: "\f586";
+}
+
+.rating > .half:before { 
+content: "\f587";
+position: absolute;
+}
+
+.rating > label { 
+color: #ddd; 
+float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > [id^="star"]:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > [id^="star"]:checked + label:hover, /* hover current star when changing rating */
+.rating > [id^="star"]:checked ~ label:hover,
+.rating > label:hover ~ [id^="star"]:checked ~ label, /* lighten current selection */
+.rating > [id^="star"]:checked ~ label:hover ~ label { color: #FFED85;  }
+
+.reset-option {
+display: none;
+}
+
+.reset-button {
+margin: 6px 12px;
+background-color: rgb(255, 255, 255);
+text-transform: uppercase;
+}
+.rating_review{
+  label{
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,96 @@
+
+.top_bg {
+    padding-top: 50px;
+    padding-bottom: 190px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #010a3a;
+    text-align: center;
+    background-position: left;
+}
+.top_bg{
+    h1{
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+    p{
+        color: #fff;
+    }
+}
+.newsletter_subscripiton{
+    .title_head
+    h1{
+        text-align: center;
+    }
+    .btn_theme {
+        padding: 1.3rem 3rem;
+        font-size: 1.6rem;
+    }
+}
+
+.subscribe_page {
+    .box_outer {
+        padding: 3rem;
+        width: 35%;
+        margin: 0 auto;
+        position: relative;
+        top: -150px;
+        background: #F5F8FA;
+    }
+    .input_theme_box {
+        background: #F5F8FA;
+        border-radius: 0.4rem;
+        padding: 0.4rem;
+        display: flex;
+        align-items: flex-start;
+        label {
+            margin-left: .5rem;
+            cursor: pointer;
+            text-align: left;
+            line-height: 22px;
+            border-bottom: 1px solid #F5F8FA;
+            &:hover{
+                border-bottom: 1px solid $theme_color;
+                transition: all ease-in-out 500ms;
+            }
+        }
+        &:hover{
+            color: $theme_color;
+            transition: all ease-in-out 500ms;
+        }
+        input{
+            margin-top: 5px;
+        }
+    }
+    .form-control {
+        border: 1px solid #eee;
+        padding: 1rem;
+    }
+    .subscribe_input_field{
+        margin-top: 2rem;
+    }
+    .title_head h1{
+        color: #000;
+        margin-bottom: 0;
+        font-size: 2.8rem;
+    }
+    .title_head h3 {
+        font-weight: 700;
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    .top_input_field{
+        .form-group{
+            margin-bottom: 2rem;
+        }
+    }
+    .subscribe_input_field{
+        .form-group{
+            margin-bottom: 0;
+        }
+       
+    } 
+}
+
+
+

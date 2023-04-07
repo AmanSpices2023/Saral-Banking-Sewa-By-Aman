@@ -1,0 +1,55 @@
+.subscribe_page {
+    .box_outer {
+        padding: 2rem;
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .title_head{
+        text-align: left;
+    }
+
+    .subscribe_us {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-around;
+     
+        .form-group {
+            margin: 0px;
+        }
+        .title_head {
+            text-align: left;
+        }
+        
+    }
+    .input_theme_box {
+        background: #e8f1ff;
+        border-radius: 0.4rem;
+        padding: 1.5rem 3.5rem;
+        height: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        label {
+            margin-left: .5rem;
+            cursor: pointer;
+        }
+        &:hover{
+            background: $theme_color;
+            color: #fff;
+            transition: all ease-in-out 1000ms;
+          }
+    }
+    .why_subscribe{
+        p{
+            text-align: left;
+        }
+    }
+    .newsletter_content{
+        width: 50%;
+    }  
+}
+

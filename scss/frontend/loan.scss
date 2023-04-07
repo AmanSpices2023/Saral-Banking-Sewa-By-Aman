@@ -1,0 +1,225 @@
+.product_infos{
+  background: #f0f0f0;
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+  margin-bottom: 2.5rem;
+  p{
+    margin-bottom: 0;
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+}
+.prd_process_flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .prd_process_list{
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+.label_process{
+  padding-left: 1.2rem;
+  label{
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: $theme_font;
+    display: block;
+    margin-bottom: .1rem;
+    line-height: .9;
+  }
+  span{
+    font-size: 1.5rem;
+    display: inline-block;
+    line-height: 1.2;
+  }
+ 
+}
+.label_icon{
+  i{
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    background: #d5e6ff;
+    line-height: 3.2rem;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    color: #4b78bd;
+  }
+}
+.product_processing{
+  margin: 2rem 0 3rem;
+}
+.bank_list_wrap{
+  .filter_search{
+    margin-bottom: 2rem;
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    box-shadow: 0 0 25px rgba(0,0,0,.1);
+  }
+}
+.bank_loan{
+  .bank_processing_flex{
+    .prd_process_list{
+      flex: 0 0 50%;
+      max-width: 50%;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+.bank_loan .bank_processing_flex .prd_process_list:nth-child(3n){
+  margin-bottom: 0;
+}
+.bank_loan .bank_processing_flex .prd_process_list:nth-child(4n){
+  margin-bottom: 0;
+}
+// Loan Detail //
+.prd_loan_flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.prd_loan_left{
+  figure{
+    height: 13rem;
+    width: 13rem;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    @include box_shadow;
+    @include border_radius;
+    img{
+      object-fit: contain;
+    }
+  }
+}
+.prd_loan_right{
+  padding-left: 1.5rem;
+  flex: 1;
+}
+.prd_loan_head{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  .prd_loan_btn{
+    margin-left: auto;
+    .btn{
+      line-height: 1.8;
+    }
+  }
+  .title_common{
+    margin-bottom: 0;
+  }
+}
+.prd_short_infos{
+  margin: 3rem 0;
+  p{
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+}
+.financial_doc_infos{
+  h3{
+    color: $blackcolor;
+    font-weight: 700;
+    font-size: 2rem;
+    border-bottom: 1px solid #e9e4e4;
+    margin-bottom: 1.5rem;
+    padding-bottom: .8rem;
+  }
+  ul{
+    li{
+      margin-bottom: .5rem;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.financial_doc_infos.box_outer{
+  margin-left: 3rem;
+  h3{
+    padding: 1rem;
+  }
+  ul{
+    padding: 0 0 0 3rem;
+  }
+}
+.other_prd_infos{
+  margin: 4rem 0 0;
+  .financial_doc_infos{
+    margin-bottom: 4rem;
+  }
+  .accordion-item{
+    margin-bottom: 2rem;
+  }
+}
+
+// Bank Listing //
+
+.bank_list_wrap{
+  .filter_search{
+    margin-bottom: 2rem;
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    box-shadow: 0 0 25px rgba(0,0,0,.1);
+  }
+}
+.filter_prd{
+  .filter_search{
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    box-shadow: 0 0 25px rgba(0,0,0,.1);
+  }
+  .form-control{
+    min-height: 4rem;
+  }
+}
+.filter_prd_list{
+  margin: 3.5rem 0 2rem;
+}
+.filter_prd_flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+  .item_partner{
+    flex: 0 0 16.6666%;
+    max-width: 16.6666%;
+    padding: 0 5px;
+    margin-bottom: 10px;
+  }
+  .item_partner_box{
+    background: #e8f1ff;
+    border-radius: .4rem;
+    padding: .8rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    h5{
+      margin-bottom: 0;
+      font-size: 1.7rem;
+      text-align: center;
+      font-weight: 600;
+    }
+    a{
+      position: absolute;
+      right: -5px;
+      top: -15px;
+      i{
+        font-size: 2rem;
+      }
+    }
+  }
+}

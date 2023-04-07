@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../fonts/bootstrapicon/font/bootstrap-icons.css" type="text/css" rel="stylesheet">
+    <link type="text/css" href="../css/front.css" rel="stylesheet">
+    <link type="text/css" href="../css/style.css" rel="stylesheet">
+    <link type="text/css" href="../css/custom.css" rel="stylesheet">
+
+    <title>Saral Banking Sewa</title>
+</head>
+
+<body>
+
+    <!-- main -->
+    <main>
+        <!-- promotion adds -->
+        <section class="promotion_col mt-5">
+            <div class="container">
+                <div class="full_promo">
+                    <img src="../images/promo.gif" class="img-responsive" alt="title">
+                </div>
+            </div>
+        </section>
+        <!-- Trending Products section-top -->
+
+        <section class="trending_product section_top">
+            <div class="container">
+                <div class="swiper trending-product-swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide trending_product_slide">
+                            <a href="javascript:void(0)">
+                                <figure>
+                                    <img src="../images/5.png" alt="title" class="img-fluid">
+                                    <div class="fig_caption">
+                                        <h4>Housing Loan</h4>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide trending_product_slide">
+                            <a href="javascript:void(0)">
+                                <figure>
+                                    <img src="../images/2.png" alt="title" class="img-fluid">
+                                    <div class="fig_caption">
+                                        <h4>Call Account</h4>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide trending_product_slide">
+                            <a href="javascript:void(0)">
+                                <figure>
+                                    <img src="../images/3.png" alt="title" class="img-fluid">
+                                    <div class="fig_caption">
+                                        <h4>Educational Loan</h4>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide trending_product_slide">
+                            <a href="javascript:void(0)">
+                                <figure>
+                                    <img src="../images/4.png" alt="title" class="img-fluid">
+                                    <div class="fig_caption">
+                                        <h4>Eligibility Check</h4>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/main.min.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+
+    <!-- Swiper Slider-->
+    <script type="text/javascript" src="../js/swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/swiper/swiper.js"></script>
+
+    <script type="text/javascript" src="../js/jquery.slimmenu.min.js"></script>
+
+
+
+    <!-- Ion range Slider -->
+    <script type="text/javascript" src="../js/rangeslider/ion.rangeSlider.min.js"></script>
+    <script type="text/javascript" src="../js/rangeslider/rangeslider.js"></script>
+
+
+    <!-- Char Js-->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/variable-pie.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <script>
+        Highcharts.chart('chart_container', {
+            chart: {
+                type: 'variablepie'
+            },
+            title: {
+                text: ''
+            },
+
+            series: [{
+                minPointSize: 10,
+                innerSize: '10%',
+                zMin: 0,
+                name: 'EMI',
+                data: [{
+                    name: 'Principal',
+                    y: 505370,
+                    z: 92.9
+                }, {
+                    name: 'Interest Rate',
+                    y: 551500,
+                    z: 118.7
+                }, {
+                    name: 'Loan Tenure',
+                    y: 312685,
+                    z: 124.6
+                }]
+            }]
+        });
+    </script>
+    <script>
+        $('.slimmenu').slimmenu({
+            resizeWidth: '768',
+            collapserTitle: '',
+            animSpeed: 'medium',
+            indentChildren: true,
+            childrenIndenter: '&raquo;'
+        });
+    </script>
+
+</body>
+
+</html>

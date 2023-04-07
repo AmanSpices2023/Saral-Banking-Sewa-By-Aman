@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../fonts/bootstrapicon/font/bootstrap-icons.css" type="text/css" rel="stylesheet">
+    <link type="text/css" href="../css/front.css" rel="stylesheet">
+    <link type="text/css" href="../css/style.css" rel="stylesheet">
+    <link type="text/css" href="../css/custom.css" rel="stylesheet">
+
+    <title>News Letter</title>
+</head>
+
+<body>
+    <!-- main -->
+    <main>
+        <!-- news Letter -->
+
+        <section class="newsletter_col section_top">
+            <div class="newsletter_bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col* col-md-5 col-lg-5 newsletter_col_left">
+                            <img src="../images/newsletter.png" alt="title" class="img-fluid">
+                        </div>
+                        <div class="col* col-md-7 col-lg-7 newsletter_col_right">
+                            <div class="newsletter_content">
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                        aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                                </div>
+                                <h4>Subscribe to Our Newsletter for Latest Updates</h4>
+                                <p>Fill your email below to join our Banking email newsletter today!</p>
+
+                                <div class="newsletter_subscribe">
+                                    <form>
+                                        <input type="text" class="form-control" placeholder="Enter Your Email">
+                                        <button type="submit" value=""><i class="bi bi-send-check"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/main.min.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+
+    <!-- Swiper Slider-->
+    <script type="text/javascript" src="../js/swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/swiper/swiper.js"></script>
+
+    <script type="text/javascript" src="../js/jquery.slimmenu.min.js"></script>
+
+
+
+    <!-- Ion range Slider -->
+    <script type="text/javascript" src="../js/rangeslider/ion.rangeSlider.min.js"></script>
+    <script type="text/javascript" src="../js/rangeslider/rangeslider.js"></script>
+
+
+    <!-- Char Js-->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/variable-pie.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <script>
+        Highcharts.chart('chart_container', {
+            chart: {
+                type: 'variablepie'
+            },
+            title: {
+                text: ''
+            },
+
+            series: [{
+                minPointSize: 10,
+                innerSize: '10%',
+                zMin: 0,
+                name: 'EMI',
+                data: [{
+                    name: 'Principal',
+                    y: 505370,
+                    z: 92.9
+                }, {
+                    name: 'Interest Rate',
+                    y: 551500,
+                    z: 118.7
+                }, {
+                    name: 'Loan Tenure',
+                    y: 312685,
+                    z: 124.6
+                }]
+            }]
+        });
+    </script>
+    <script>
+        $('.slimmenu').slimmenu({
+            resizeWidth: '768',
+            collapserTitle: '',
+            animSpeed: 'medium',
+            indentChildren: true,
+            childrenIndenter: '&raquo;'
+        });
+    </script>
+
+</body>
+
+</html>

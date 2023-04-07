@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../fonts/bootstrapicon/font/bootstrap-icons.css" type="text/css" rel="stylesheet">
+    <link type="text/css" href="../css/front.css" rel="stylesheet">
+    <link type="text/css" href="../css/style.css" rel="stylesheet">
+    <link type="text/css" href="../css/custom.css" rel="stylesheet">
+
+    <title>Saral Banking Sewa</title>
+</head>
+
+<body>
+    <!-- main -->
+    <main>
+        <section class="emi_calculator section_top">
+            <div class="container">
+                <div class="title_head">
+                    <h2>EMI Calculator</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col* col-md-5 col-lg-6 emi_left">
+                        <div class="emi_input_block">
+                            <form>
+                                <div class="emi_input_list">
+                                    <div class="emi_input_flex">
+                                        <label>Loan Amount</label>
+                                        <div class="emi_input_amt">
+                                            <span class="span_currency">Nrs</span>
+                                            <span class="span_amount">14.500.000</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="range_slider_input">
+                                        <input type="text" id="principal_slider" class="js-range-slider" name="my_range"
+                                            value="" />
+                                    </div>
+                                </div>
+
+                                <div class="emi_input_list">
+                                    <div class="emi_input_flex">
+                                        <label>Interest Rate</label>
+                                        <div class="emi_input_amt">
+                                            <span class="span_amount">0%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="range_slider_input">
+                                        <input type="text" id="interest_slider" class="js-range-slider" name="my_range"
+                                            value="" />
+                                    </div>
+                                </div>
+
+                                <div class="emi_input_list">
+                                    <div class="emi_input_flex">
+                                        <label>Loan term</label>
+                                        <div class="emi_input_amt">
+                                            <span class="span_amount">25Yr</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="range_slider_input">
+                                        <input type="text" id="loanterm_slider" class="js-range-slider" name="my_range"
+                                            value="" />
+                                    </div>
+                                </div>
+
+                                <div class="submit_btn mt-5">
+                                    <button type="sumbit" value="" class="btn btn_theme">Calculate</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div class="col* col-md-7 col-lg-6 emi_right">
+                        <div class="box_outer emi_content">
+                            <h3>Monthly Emi</h3>
+
+                            <div class="emi_amount">
+                                <span>Nrp 109,887.24</span>
+                            </div>
+
+                            <div class="emi_details_flex">
+                                <div class="emi_detail_list">
+                                    <h4>Principal</h4>
+                                    <span>24,100,000.00</span>
+                                </div>
+
+                                <div class="emi_detail_list">
+                                    <h4>Total Payable</h4>
+                                    <span>25,098,256.67</span>
+                                </div>
+
+                                <div class="emi_detail_list">
+                                    <h4>Interest Payable</h4>
+                                    <span>998,256.67</span>
+                                </div>
+                            </div>
+
+                            <div class="emi_chart">
+                                <div id="chart_container"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/main.min.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+
+    <!-- Swiper Slider-->
+    <script type="text/javascript" src="../js/swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/swiper/swiper.js"></script>
+
+    <script type="text/javascript" src="../js/jquery.slimmenu.min.js"></script>
+
+
+
+    <!-- Ion range Slider -->
+    <script type="text/javascript" src="../js/rangeslider/ion.rangeSlider.min.js"></script>
+    <script type="text/javascript" src="../js/rangeslider/rangeslider.js"></script>
+
+
+    <!-- Char Js-->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/variable-pie.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <script>
+        Highcharts.chart('chart_container', {
+            chart: {
+                type: 'variablepie'
+            },
+            title: {
+                text: ''
+            },
+
+            series: [{
+                minPointSize: 10,
+                innerSize: '10%',
+                zMin: 0,
+                name: 'EMI',
+                data: [{
+                    name: 'Principal',
+                    y: 505370,
+                    z: 92.9
+                }, {
+                    name: 'Interest Rate',
+                    y: 551500,
+                    z: 118.7
+                }, {
+                    name: 'Loan Tenure',
+                    y: 312685,
+                    z: 124.6
+                }]
+            }]
+        });
+    </script>
+    <script>
+        $('.slimmenu').slimmenu({
+            resizeWidth: '768',
+            collapserTitle: '',
+            animSpeed: 'medium',
+            indentChildren: true,
+            childrenIndenter: '&raquo;'
+        });
+    </script>
+
+</body>
+
+</html>

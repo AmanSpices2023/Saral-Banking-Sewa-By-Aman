@@ -1,0 +1,109 @@
+.product_list_hover{
+  figure{
+    position: relative;
+    overflow: hidden;
+    &:after{
+      background: linear-gradient(to bottom, transparent 55%, rgba(0,0,0,0.95) 100%);;
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      bottom: 0;
+      left: 0;
+      content: '';
+      transition: all ease 500ms;
+    }
+    img{
+      transition: all ease-in-out 1000ms;
+      border-radius: .3rem;
+    }
+  }
+  a{
+    color: #fff;
+    &:hover{
+      color: #fff;
+      figure{
+        img{
+          transform: scale(1.1);
+        }
+        .fig_caption{
+          bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+.fig_caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 9;
+  text-align: center;
+  transition: all ease-in-out .5s;
+  h4{
+    font-size: 1.7rem;
+  }
+}
+// Bank Listing //
+
+.bank_list_wrap{
+  .filter_search{
+    margin-bottom: 2rem;
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    box-shadow: 0 0 25px rgba(0,0,0,.1);
+  }
+}
+.filter_prd{
+  .filter_search{
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    box-shadow: 0 0 25px rgba(0,0,0,.1);
+  }
+  .form-control{
+    min-height: 4rem;
+  }
+}
+.filter_prd_list{
+  margin: 3.5rem 0 2rem;
+}
+.filter_prd_flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+  .item_partner{
+    flex: 0 0 16.6666%;
+    max-width: 16.6666%;
+    padding: 0 5px;
+    margin-bottom: 10px;
+  }
+  .item_partner_box{
+    background: #e8f1ff;
+    border-radius: .4rem;
+    padding: .8rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    h5{
+      margin-bottom: 0;
+      font-size: 1.7rem;
+      text-align: center;
+      font-weight: 600;
+    }
+    a{
+      position: absolute;
+      right: -5px;
+      top: -15px;
+      i{
+        font-size: 2rem;
+      }
+    }
+  }
+}

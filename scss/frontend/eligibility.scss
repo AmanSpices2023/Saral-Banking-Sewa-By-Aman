@@ -1,0 +1,29 @@
+.eligibility_infos{
+  h2{
+    color: $blackcolor;
+    font-size: 2rem;
+  }
+}
+.content_form{
+  margin: 30px 0;
+}
+.notes_section {
+  background: #f2fff2;
+  padding: 1.5rem;
+  ul{
+    margin: 0;
+    li{
+      margin-bottom: .8rem;
+    }
+  }
+}
+.label_notes{
+  font-weight: 400;
+  font-size: 1.8rem;
+  font-style: italic;
+  margin-bottom: .8rem;
+}
+.eligibility_infos{
+  border-right: 1px solid #eee;
+  padding-right: 4rem;
+}

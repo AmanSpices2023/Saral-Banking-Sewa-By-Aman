@@ -1,0 +1,127 @@
+.emi_content{
+  padding: 2rem;
+  height: 100%;
+  h3{
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $blackcolor;
+  }
+}
+.emi_details_flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+.emi_detail_list{
+  h4{
+    text-transform: uppercase;
+    color: $theme_color;
+    margin-bottom: 0;
+    font-size: 1.6rem;
+  }
+  span{
+    font-size: 1.8rem;
+  }
+}
+.emi_amount{
+  text-align: center;
+  margin-top: 1.2rem;
+  span{
+    background: #F2F6FF;
+    display: inline-block;
+    padding: .8rem 2.2rem;
+    font-size: 2.2rem;
+    color: $theme_color;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+.emi_input_flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  label{
+    text-transform: uppercase;
+    color: $blackcolor;
+    font-size: 1.6rem;
+  }
+}
+.emi_input_amt{
+  .span_amount{
+    font-size: 2.2rem;
+  }
+}
+.irs--flat .irs-bar{
+  background-color: $theme_color;
+}
+.irs--flat .irs-handle {
+  top: 17px;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid $theme_color;
+}
+
+.irs--flat .irs-handle>i:first-child {
+  top: 6px;
+  left: 35%;
+  margin-left: 0;
+  background-color: $theme_color;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+}
+.irs--flat .irs-min, .irs--flat .irs-max {
+  bottom: -55px;
+  top: initial;
+}
+.irs--flat .irs-handle.state_hover>i:first-child, .irs--flat .irs-handle:hover>i:first-child {
+  background-color: $theme_color;
+}
+.irs--flat .irs-min, .irs--flat .irs-max {
+  color: #333333;
+  font-size: 1.4rem;
+  background-color: transparent;
+}
+.irs-from, .irs-to, .irs-single{
+  top: -4px;
+}
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+  font-size: 1.2rem;
+  background-color: $theme_color;
+}
+.irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before{
+  border-top-color: $theme_color;
+}
+.emi_input_list {
+  border-bottom: 1px solid #E1E1E1;
+  padding-bottom: 4.2rem;
+  margin-bottom: 2rem;
+  &:last-child{
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+.emi_input_block{
+  padding-right: 2rem;
+}
+.emi_chart{
+  .highcharts-root{
+    height: 100%;
+  }
+  .highcharts-container {
+    height: 25rem!important;
+  }
+}
+.submit_btn{
+  input{
+    cursor: pointer;
+    text-align: center;
+  }
+}

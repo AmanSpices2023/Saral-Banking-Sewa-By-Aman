@@ -1,0 +1,76 @@
+.forex_infos{
+  h5{
+    margin-bottom: 1.8rem;
+  }
+}
+.flag {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 5rem;
+  height: 2rem;
+  background: url(../images/flag.svg) no-repeat;
+  background-size: 29.6px auto;
+}
+// Flag position //
+.flag_us{
+  background-position: 0 -27.5px;
+}
+.flag_eu {
+  background-position: 0 -55px;
+}
+.flag_uk {
+  background-position: 0 -82.5px;
+}
+.flag_swiss {
+  background-position: 0 -110px;
+}
+.flag_aus {
+  background-position: 0 -137.5px;
+}
+.flag_cad {
+  background-position: 0 -165.5px;
+}
+.flag_sgd {
+  background-position: 0 -192.5px;
+}
+.flag_jpn {
+  background-position: 0 -220px;
+}
+.flag_chin {
+  background-position: 0 -247.5px;
+}
+.flag_sar {
+  background-position: 0 -275px;
+}
+.flag_qar {
+  background-position: 0 -302.5px;
+}
+.flag_thai {
+  background-position: 0 -330px;
+}
+.flag_uae {
+  background-position: 0 -357.5px;
+}
+.flag_myr {
+  background-position: 0 -385px;
+}
+.flag_korea {
+  background-position: 0 -412.5px;
+}
+.flag_swed {
+  background-position: 0 -440px;
+}
+.flag_dan {
+  background-position: 0 -467.5px;
+}
+.flag_hkd {
+  background-position: 0 -495px;
+}
+.flag_kwd {
+  background-position: 0 -522.5px;
+}
+.flag_bhd {
+  background-position: 0 -550px;
+}
+

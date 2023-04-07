@@ -1,0 +1,38 @@
+.contact_list{
+  .form-control{
+    width: 100%;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    background: #fbfbfb;
+    transition: 0.3s linear;
+    min-height: 4.5rem;
+  }
+}
+.contact_right{
+  .form-group{
+    margin-bottom: 1.5rem;
+  }
+}
+.contact_infos_top{
+  margin-bottom: 1.5rem;
+  h3{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+  }
+  p{
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+}
+.contact_infos_list{
+  margin-bottom: 1.5rem;
+  label{
+    display: block;
+    font-size: 1.8rem;
+    color: $blackcolor;
+  }
+  span{
+    color: #6a6a6a;
+  }
+}

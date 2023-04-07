@@ -1,0 +1,215 @@
+.header_top{
+  border-bottom: 1px solid #f6f6f6;
+  padding: .5rem 0;
+}
+
+.header_top_flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo_col{
+  height: 4rem;
+}
+.header_menu{
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+.header_login{
+  margin-left: auto;
+}
+// Notification Dropdown //
+.user-menu.nav>li>a{
+  color:$body_color;
+  font-size:1.5rem;
+  padding:0 1rem;
+}
+.user-menu.nav>li>a:hover i,.user-menu.nav>li>a:focus i{
+  opacity:.8
+}
+.arrow-none{
+  .dropdown-toggle::after{
+    display: none;
+  }
+}
+.user-menu .dropdown-menu{
+  padding:0
+}
+.dropdown_notify .dropdown-menu{
+  min-width:30rem;
+}
+.dropdown-menu{
+  border:1px solid #eff2f7;
+  border-radius:.8rem;
+  transform-origin:left top 0;
+  background-color:#fff;
+  box-shadow:0 0 1.25rem rgba(31,45,61,.08)
+}
+.navbar-nav .open .dropdown-menu{
+  border:0;
+  box-shadow:0 0 10px rgba(0,0,0,.1);
+  background-color:#fff
+}
+.dropdown-menu{
+  font-size:1.4rem
+}
+.user-menu{
+  margin: 0;
+}
+.user-menu{
+  ul{
+    padding: 0;
+    margin: 0;
+    li{
+      list-style: none;
+      
+    }
+  }
+}
+// User Dropdown //
+.user-img{
+  display:inline-block;
+  margin-right:3px;
+  position:relative;
+  height: 2.8rem;
+  width: 2.8rem;
+  background: $theme_color;
+  border-radius: 50%;
+  line-height: 3rem;
+    text-align: center;
+  i{
+    color: #fff;
+    font-size: 1.8rem;
+  }
+ 
+}
+.dropdown_user{
+  .dropdown-menu{
+    min-width:22rem;
+    top: 7px!important;
+    border-radius: .5rem;
+    .dropdown-item{
+      display:flex;
+      align-items:center;
+      padding:.4rem 1rem;
+      border-bottom: 1px solid #f5f5f5;
+      i{
+        font-size: 1.8rem;
+        margin-right: .6rem;
+      }
+    }
+  }
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #1e2125;
+  background-color: #f8f8f8;
+}
+.header_login .has-arrow .dropdown-toggle:after{
+  border-top:0;
+  border-left:0;
+  border-bottom:1px solid #333;
+  border-right:1px solid #333;
+  content:'';
+  height:8px;
+  width:8px;
+  vertical-align:2px;
+  display:inline-block;
+  pointer-events:none;
+  -webkit-transform-origin:66% 66%;
+  -transform-origin:66% 66%;
+  transform-origin:66% 66%;
+  -webkit-transform:rotate(45deg);
+  -transform:rotate(45deg);
+  transform:rotate(45deg);
+  -webkit-transition:all .15s ease-in-out;
+  transition:all .15s ease-in-out;
+}
+.header_login .has-arrow .dropdown-toggle[aria-expanded=true]:after{
+  -webkit-transform:rotate(-135deg);
+  -transform:rotate(-135deg);
+  transform:rotate(-135deg)
+}
+
+// Language //
+.language-img{
+  img{
+    height: 1.3rem;
+  }
+}
+.dropdown_language{
+  .dropdown-menu{
+    min-width:20rem;
+    top: 7px!important;
+    border-radius: .5rem;
+    .dropdown-item{
+      display:flex;
+      align-items:center;
+      padding:.6rem 1rem;
+      border-bottom: 1px solid #f5f5f5;
+      color: $body_color;
+      img{
+        height: 1.4rem;
+        margin-right: .5rem;
+        width: 2rem;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.menu_fixed {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 999;
+  background: #fff;
+  box-shadow: 0px 16px 32px 0px rgba(196, 203, 255, 0.3);
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+@-webkit-keyframes slideInUp {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+@keyframes slideInUp {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@media only screen and (max-width:900px){
+  .sidemenu{
+    display: block!important;
+  }
+}

@@ -1,0 +1,51 @@
+.hallmark_col{
+  h5{
+    margin-bottom: 2rem;
+  }
+}
+
+.hallmark_bg{
+  background: #fff;
+  @include box_shadow;
+  border: 1px solid #eee;
+  border-radius: .4rem;
+  padding: 1rem;
+  height: 100%;
+}
+.hallmark_bg{
+  img{
+    height: 5.5rem;
+    object-fit: contain;
+  }
+  h4{
+    font-weight: 600;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+}
+.hallmark_price_flex{
+  display: flex;
+  flex-direction: row;
+  .hallmark_price{
+    margin-left: auto;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+    font-family: $head_font;
+  }
+}
+.hallmark_col{
+  margin-bottom: 2rem;
+}
+.hallmark_list{
+  margin-bottom: 1rem;
+}
+.hallmark_chart{
+  margin-top: 2rem;
+}
+.font-m{
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}

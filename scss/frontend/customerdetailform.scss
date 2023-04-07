@@ -1,0 +1,27 @@
+.customer_detail_form {
+    .content_box {
+        width: 70%;
+        margin: 0 auto;
+        .row {
+            margin-bottom: 2rem;
+
+            .title_common {
+                color: #54534f;
+                padding: .8rem 0.8rem;
+                background-color: #ebebeb;
+                font-weight: 400;
+                font-size: 1.8rem;
+            }
+
+            .form_title {
+                color: #434343;
+                font-weight: 400;
+            }
+
+            .customer_details {
+                gap: 1.5rem;
+                margin-top: .6rem;
+            }
+        }
+    }
+}

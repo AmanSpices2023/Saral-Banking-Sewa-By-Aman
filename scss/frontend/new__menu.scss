@@ -1,0 +1,116 @@
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    .header_left{
+        figure{
+            margin: 0;
+            padding: 0;
+            .logo_col{
+                height: 7rem;
+            }
+        }
+    }
+    .header_right{
+        flex: 1;
+        .header__top{
+            padding-bottom: 1.5rem;
+            .social_icon{
+                ul{
+                    justify-content: end;
+                }
+            }
+        }
+        .header__bottom{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            nav{
+                ul.slimmenu {
+                    li {
+                        
+                        a {
+                            font-family: "Inter";
+                            font-size: 1.4rem;
+                            font-weight: 500;
+                            color: #000;
+                            display: block;
+                            padding: 1rem 1.5rem;
+                            &:hover {
+                                text-decoration: none;
+                                background-color: #fff;
+                                color: #0E56A7;
+                                transition: all ease-in-out 0.3s;
+                            }
+                            i{
+                                display: none;
+                            }
+                        }
+                        .sub-toggle {
+                            display: none;
+                            background: initial;
+                        }
+                        ul {
+                            background: #fff;
+                            padding-left: 0;
+                            min-width: 15rem;
+                            border: 1px solid #ebebeb;
+                            li {
+                                background: #fff;
+                                width: 100%;
+                                border-bottom: 1px solid #eee;
+                                &:last-child {
+                                    border-bottom: 0px solid #eee;
+                                }
+                                a {
+                                    font-family: "Inter";
+                                    font-size: 1.4rem;
+                                    font-weight: 500;
+                                    padding: 1rem 1rem;
+                                    text-transform: capitalize;
+                                }
+                                .sub-toggle {
+                                    display: block;
+                                    background: initial;
+                                }
+                            }  
+                        }
+                    }
+                }
+            }
+
+            .header_login{
+                margin-left: 1rem;
+                padding-left: 1rem;
+            }
+        }
+    }
+}
+
+ul.slimmenu.collapsed li.sign__in a {
+    border-bottom: 0;
+}
+ul.slimmenu li>ul {
+    top: 5.2rem;
+}
+ul.slimmenu li>ul>li ul {
+    top: -1px;
+}
+
+.loader_logo{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    figure{
+        text-align: center;
+        .logo_col {
+            height: 10rem;
+        }
+    }
+}
+#loading{
+    background: #fff;
+}
